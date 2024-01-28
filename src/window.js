@@ -459,7 +459,7 @@ async function onCloseSession({ session, window }) {
 
 async function promptSessionClose({ window }) {
   const builder = Gtk.Builder.new_from_resource(resource);
-  const dialog = builder.get_object("message_dialog_save_project");
+  const dialog = builder.get_object("alert_dialog_save_project");
 
   dialog.set_transient_for(window);
   dialog.present();
